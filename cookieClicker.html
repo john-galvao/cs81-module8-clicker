@@ -17,5 +17,17 @@
   <div id="message">
     Click the cookie to start!
   </div>
+
+  <script>
+    const cookieBtn = document.getElementById("cookieBtn");
+    const countSpan = document.getElementById("count");
+
+    let clicks = 0;
+
+    cookieBtn.addEventListener("click", () => {
+      clicks++;
+      countSpan.textContent = clicks;
+    });
+  </script>
 </body>
 </html>
