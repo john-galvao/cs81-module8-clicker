@@ -31,12 +31,16 @@
 
       if (clicks === 10) {
         messageDiv.textContent = "You’re just getting started";
+        document.body.style.backgroundColor = "#fff3cd";
       } else if (clicks === 25) {
-        messageDiv.textContent = "That's a lot of cookies";
+        messageDiv.textContent = "Wow, that’s a lot of cookies";
+        document.body.style.backgroundColor = "#d1ecf1";
       } else if (clicks === 50) {
-        messageDiv.textContent = "You're still clicking?";
+        messageDiv.textContent = "Are you still clicking?";
+        document.body.style.backgroundColor = "#d4edda";
       } else if (clicks === 100) {
-        messageDiv.textContent = "You win... Take a break";
+        messageDiv.textContent = "You win! Maybe take a break";
+        document.body.style.backgroundColor = "#f8d7da";
       }
     });
   </script>
