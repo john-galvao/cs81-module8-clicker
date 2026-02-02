@@ -21,12 +21,23 @@
   <script>
     const cookieBtn = document.getElementById("cookieBtn");
     const countSpan = document.getElementById("count");
+    const messageDiv = document.getElementById("message");
 
     let clicks = 0;
 
     cookieBtn.addEventListener("click", () => {
       clicks++;
       countSpan.textContent = clicks;
+
+      if (clicks === 10) {
+        messageDiv.textContent = "You’re just getting started";
+      } else if (clicks === 25) {
+        messageDiv.textContent = "That's a lot of cookies";
+      } else if (clicks === 50) {
+        messageDiv.textContent = "You're still clicking?";
+      } else if (clicks === 100) {
+        messageDiv.textContent = "You win... Take a break";
+      }
     });
   </script>
 </body>
